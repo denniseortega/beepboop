@@ -11,10 +11,7 @@ _The web application outputs "beep" or "boop" if the user inputs 0 or 1._
 ## Setup/Installation Requirements
 
 * _Web browser of your choice_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone and download from github_
 
 ## Specifications
 * _Program replaces 0 with "Beep!"

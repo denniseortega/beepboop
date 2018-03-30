@@ -1,4 +1,8 @@
 //business logic
+var userName="";
+
+//var beep = str.replace(/0/g, "BEEP!")
+//var boop = str.replace(/1/g, "BEEP!")
 
 var beepboop = function (userInput) {
   var result = [];
@@ -9,7 +13,7 @@ var beepboop = function (userInput) {
     } else if (i === 1) {
       result.push("BOOP!");
     }else if (i%3 === 0) {
-      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+      result.push("I'm sorry,"+ userName + ". I'm afraid I can't do that.");
     }
   }
 return result;
@@ -20,7 +24,8 @@ return result;
 $(document).ready (function(){
   $('#userInput').submit(function(event){
     event.preventDefault();
-    var number = parseInt ($('input#number').val());
+    userName = $("input#name").val();
+    var number = parseInt($('input#number').val());
     var result = beepboop(number);
    $(".output").text(result);
    $(".output").show();
