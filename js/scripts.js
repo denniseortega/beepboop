@@ -1,18 +1,16 @@
 //business logic
-var userName="";
-
-//var beep = str.replace(/0/g, "BEEP!")
-//var boop = str.replace(/1/g, "BEEP!")
 
 var beepboop = function (userInput) {
   var result = [];
+  var userName= "";
+  str = str.replace(/0/g, "Beep!")
   for (var i= 1; i <= userInput; i++) {
     result.push(i);
     if (i === 0)  {
-      result.push("BEEP!");
+      result=result.concat(str);
     } else if (i === 1) {
       result.push("BOOP!");
-    }else if (i%3 === 0) {
+    } else if (i % 3 === 0) {
       result.push("I'm sorry, "+ userName + ". I'm afraid I can't do that.");
     }
   }
