@@ -8,20 +8,17 @@ var beepboop = function (num) {
   for (var i= 1; i < num; i++) {
 
     if (i % 3 === 0)  {
-      alert("I'm sorry, Dave. I'm afraid I can't do that.");
+      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
       return;
 
     } else if (i.toString().match (/0/)){
-      alert("BEEP!");
+      result.push("BEEP!");
       return;
 
     }else if (i.toString().match(/1/)) {
-      alert("BOOP!");
-
-    } else {
-      alert(i);
-    }
+      result.push("BOOP!");
   }
+}
 return results;
 }
 
