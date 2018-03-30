@@ -3,7 +3,6 @@
 var beepboop = function (num) {
 
   var result = [];
-  var i = num;
 
   for (var i= 1; i < num; i++) {
 
@@ -19,18 +18,16 @@ var beepboop = function (num) {
       result.push("BOOP!");
   }
 }
-return results;
+return result;
 }
 
 //front-end logic
 $(document).ready (function(){
   $('#userInput').submit(function(event){
     event.preventDefault();
-    var userInput = parseInt ($('#number').val());
-
-    var output = beepboop(userInput);
+    var input = parseInt ($('#number').val());
+    var output = beepboop(input);
    $(".message").text(output);
-
    $(".output").show();
  });
 });
