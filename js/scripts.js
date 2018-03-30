@@ -1,33 +1,28 @@
 //business logic
 
-var beepboop = function (num) {
-
+var beepboop = function (userInput) {
   var result = [];
-
-  for (var i= 1; i < num; i++) {
-
-    if (i % 3 === 0)  {
-      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
-      return;
-
-    } else if (i.toString().match (/0/)){
+  for (var i= 1; i <= userInput; i++) {
+    result.push(i);
+    if (i === 0)  {
       result.push("BEEP!");
-      return;
-
-    }else if (i.toString().match(/1/)) {
+    } else if (i === 1) {
       result.push("BOOP!");
+    }else if (i%3 === 0) {
+      result.push("I'm sorry, Dave. I'm afraid I can't do that.");
+    }
   }
-}
 return result;
 }
 
 //front-end logic
+
 $(document).ready (function(){
   $('#userInput').submit(function(event){
     event.preventDefault();
-    var input = parseInt ($('#number').val());
-    var output = beepboop(input);
-   $(".message").text(output);
+    var number = parseInt ($('input#number').val());
+    var result = beepboop(number);
+   $(".output").text(result);
    $(".output").show();
  });
 });
