@@ -1,0 +1,30 @@
+h1 {
+  text-align: center;
+  font-size: 35pt;
+}
+
+body {
+  background-color: #F3C8BE;
+  font-family: helvetica;
+}
+
+input#number{
+  width: 20%;
+}
+
+#userInput {
+  margin-left: 15%;
+  font-weight: lighter;
+}
+
+label {
+  font-size: 20pt;
+  font-weigh
+  font-weight:lighter;
+}
+
+.output {
+  display: none;
+  margin-left: 15%;
+  font-family: helvetica;
+}
