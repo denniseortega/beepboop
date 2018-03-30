@@ -13,7 +13,7 @@ var beepboop = function (userInput) {
     } else if (i === 1) {
       result.push("BOOP!");
     }else if (i%3 === 0) {
-      result.push("I'm sorry,"+ userName + ". I'm afraid I can't do that.");
+      result.push("I'm sorry, "+ userName + ". I'm afraid I can't do that.");
     }
   }
 return result;
