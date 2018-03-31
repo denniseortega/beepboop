@@ -20,11 +20,11 @@ _The web application outputs "beep" or "boop" if the user inputs 0 or 1._
 * _Program replaces 1 with "Boop!"
   * _Example Input : 1
   * _Example Output: ["Boop!"]
-* _Program replaces numbers divisible by 3 with   "I'm sorry, Dave. I'm afraid I can't do that."
+* _Program replaces numbers divisible by 3 with   "I'm sorry, [user's name]. I'm afraid I can't do that."
 
 ## Known Bugs
 
-_None at the moment._
+_Having trouble successfully replacing the 0s and 1s instead of just pushing the "example ouput" next to the number._
 
 ## Support and contact details
 

@@ -3,11 +3,10 @@
 var beepboop = function (userInput) {
   var result = [];
   var userName= "";
-  str = str.replace(/0/g, "Beep!")
   for (var i= 1; i <= userInput; i++) {
     result.push(i);
     if (i === 0)  {
-      result=result.concat(str);
+      result.push("BOOP!");
     } else if (i === 1) {
       result.push("BOOP!");
     } else if (i % 3 === 0) {
