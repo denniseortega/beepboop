@@ -1,12 +1,13 @@
 //business logic
 
+var userName= "";
+
 var beepboop = function (userInput) {
   var result = [];
-  var userName= "";
   for (var i= 1; i <= userInput; i++) {
     result.push(i);
     if (i === 0)  {
-      result.push("BOOP!");
+      result.push("BEEP!");
     } else if (i === 1) {
       result.push("BOOP!");
     } else if (i % 3 === 0) {
